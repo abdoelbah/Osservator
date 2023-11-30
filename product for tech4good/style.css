@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "Ara Hamah Kilania";
+    src: url("Fonts/Ara\ Hamah\ Kilania.woff2") format("woff2"),
+        url("fonts/Ara\ Hamah\ Kilania.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Handita";
+    src: url("Fonts/Handita.woff2") format("woff2"),
+        url("fonts/Handita.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lerum Stencil";
+    src: url("Fonts/Lerum-Stencil.woff2") format("woff2"),
+        url("fonts/Lerum-Stencil.woff") format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+:root {
+    --gray: #ddefe2;
+    --darkgreen: #063e21;
+    --lightgreen: #1eb35d;
+    --orange: #d64a32;
+}
+
+.blur-effect-orng {
+    width: 190px;
+    height: 190px;
+    filter: blur(65px);
+    background-color: var(--orange);
+    z-index: -1;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blur-effect-gren {
+    width: 190px;
+    height: 190px;
+    filter: blur(65px);
+    background-color: var(--lightgreen);
+    z-index: -1;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/*----------------------------------------*/
+/*header attrs*/
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 20%;
+}
+
+.logo {
+    width: 21%;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.logo img {
+    width: 101%;
+    height: auto;
+    margin-top: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 32%;
+}
+
+header nav a {
+    font-family: "Ara\ Hamah\ Kilania", fallback, sans-serif;
+    text-decoration: none;
+    color: var(--darkgreen);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    display: block;
+    padding: 19px;
+}
+
+.account {
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.account .order-bttn {
+    margin-right: 10px;
+}
+
+.account .order-bttn a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 2px 16px;
+    border-radius: 25px;
+    background-color: var(--orange);
+    color: #fff;
+    font-family: 'Ara Hamah Kilania';
+}
+
+.account .account-bttn {
+    width: 100%;
+}
+
+.account .account-bttn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.account .account-bttn a i {
+    font-size: 2.4em;
+    color: var(--darkgreen);
+    padding: 0.1em;
+    display: inline-block;
+    position: relative;
+}
+
+/*header*/
+/*main section */
+main {
+
+display: flex;
+}
+
+main article {
+    position: relative;
+    display: flex;
+    width: 56%;
+    padding: 3em 0em 2em 4em;
+    flex-direction: column;
+}
+
+.artcl-eff {
+
+    top: 10em;
+}
+
+.artcl-eff2 {
+
+    top: 25em;
+
+    left: 6em;
+}
+
+main article h1 {
+    font-family: 'Ara Hamah Kilania';
+    font-size: 7em;
+    font-weight: 100;
+    color: var(--lightgreen);
+    padding: 0 0.3em;
+}
+
+main article p {
+    position: relative;
+    font-family: 'Ara Hamah Kilania';
+    font-size: xxx-large;
+    padding: 0em 3.1em 0em 0.3em;
+    color: var(--darkgreen);
+    text-align: left;
+}
+
+main article p::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 7px;
+    height: 77%;
+    background-color: var(--orange);
+}
+
+main article .demo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+main article a {
+
+    display: block;
+
+    width: 50%;
+}
+
+main article .demo .learn {font-size: 2em;font-family: 'Ara Hamah Kilania';text-transform: capitalize;text-align: center;width: 6em;background-color: var(--orange);padding: 0.5em 1.3em;border-radius: 50px;color: #fff;margin: 5px 0;}
+
+main article .demo .learn i {
+    font-size: 30px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+main article .demo .watch {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: .1em .2em;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: xxx-large;
+    font-family: 'Ara Hamah Kilania';
+    color: var(--darkgreen);
+}
+
+main article .demo .watch i {
+    color: var(--orange);
+    font-size: 1.2em;
+    position: absolute;
+    left: -1.1em;
+
+}
+
+section {
+    position: relative;
+    width: 38%;
+}
+
+.img-eff {
+    bottom: -1em;
+    left: -13em;
+}
+
+.img-eff2 {
+    top: 5em;
+    right: 14em;
+}
+
+section .img-1 {
+    position: absolute;
+    width: 16em;
+    left: -1em;
+    top: 6em;
+}
+
+section .img-2 {
+    position: absolute;
+    width: 14em;
+    left: 10em;
+    top: 5em;
+}
+
+/*main section */
+/*core section*/
+.food-waste {}
+
+.food-waste h1 {}
+
+.food-waste .stats {}
+
+.food-waste .stats li {}
+
+.food-waste .stats li h3 {}
+
+.food-waste .stats li h3 .big-sqr {}
+
+.food-waste .stats li h3 .sml-sqr {}
+
+/*core section*/
